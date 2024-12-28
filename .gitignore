@@ -1,0 +1,26 @@
+public
+vendor
+.idea
+
+# Ordner im Download Ordner ignorieren
+mpf_kidnapped
+abstrakte-konzeptillustration-der-cloud-computing-sicherheit
+basepackage_ue06
+basepackage_ue07
+Blackmagic_RAW_Windows_4.0
+Cream Illustrative Healthy Eating Tips Poster
+Cream Illustrative Healthy Eating Tips Poster (1)
+eclipse-java-2023-09-R-win32-x86_64
+ERwin7.2
+generierung-von-geschaeftsideen-planen-sie-die-entwicklung-nachdenklicher-mann-mit-gluehbirnen-zeich
+jdk-21_windows-x64_bin
+ue14font
+Quellcode_G1 (2)
+Lab - ARIA HTML5
+
+# Temporäre Dateien und nicht genutzte Ressourcen ignorieren
+*.zip
+*.tmp
+*.log
+*.bak
+
