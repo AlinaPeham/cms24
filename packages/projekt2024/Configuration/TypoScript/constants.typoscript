@@ -9,10 +9,10 @@
 ############
 page {
     logo {
-        file = EXT:projekt2024/Resources/Public/Images/logo.svg
-        fileInverted = EXT:projekt2024/Resources/Public/Images/logo-inverted.svg
-        height = 52
-        width = 192
+        file = EXT:projekt2024/Resources/Public/Images/LogoBlau.svg
+        fileInverted = EXT:projekt2024/Resources/Public/Images/LogoBlau.svg
+        height = 169
+        width = 224
         alt = projekt2024
         linktitle = projekt2024
     }
