@@ -1,7 +1,10 @@
 ######################
 #### DEPENDENCIES ####
 ######################
+@import 'EXT:mask/Configuration/TypoScript/setup.typoscript'
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
 
 
 ##############
@@ -27,4 +30,6 @@ page {
     includeJSFooter {
         projekt2024_scripts = EXT:projekt2024/Resources/Public/JavaScript/Dist/scripts.js
     }
+
+
 }
