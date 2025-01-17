@@ -6,17 +6,17 @@
                 <f:media file="{file}" width="200" alt="{file.description}" />
             </div>
 
-            <!-- Name -->
-            <f:if condition="{data.tx_mask_name}">
-                <div class="team-member-name">
-                    <strong>{data.tx_mask_name}</strong>
-                </div>
-            </f:if>
-
             <!-- Position -->
             <f:if condition="{data.tx_mask_position}">
                 <div class="team-member-position">
                     {data.tx_mask_position}
+                </div>
+            </f:if>
+
+            <!-- Name -->
+            <f:if condition="{data.tx_mask_name}">
+                <div class="team-member-name">
+                    <strong>{data.tx_mask_name}</strong>
                 </div>
             </f:if>
 
