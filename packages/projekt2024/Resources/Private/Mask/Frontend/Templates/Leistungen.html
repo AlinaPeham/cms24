@@ -1,0 +1,19 @@
+<div class="leistungen">
+    <f:for each="{data.tx_mask_logo}" as="file">
+        <div class="logo">
+            <f:media file="{file}" width="200" />
+        </div>
+    </f:for>
+
+    <f:if condition="{data.tx_mask_titel}">
+        <div class="titel">
+            <h1>{data.tx_mask_titel}</h1>
+        </div>
+    </f:if>
+
+    <f:if condition="{data.tx_mask_beschreibung}">
+        <div class="fließtext">
+            {data.tx_mask_beschreibung -> f:format.html()}
+        </div>
+    </f:if>
+</div>
