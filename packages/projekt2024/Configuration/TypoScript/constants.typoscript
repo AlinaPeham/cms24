@@ -58,3 +58,10 @@ plugin.bootstrap_package.settings.scss {
     primary = #eb3e4a
     secondary = #013859
 }
+
+#news
+plugin.tx_news.view.twb5{
+    templateRootPath = EXT:projekt2024/Resources/Private/Templates/
+    partialRootPath = EXT:projekt2024/Resources/Private/Partials/
+    layoutRootPath = EXT:projekt2024/Resources/Private/Layouts/
+}
