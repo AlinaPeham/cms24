@@ -16,4 +16,12 @@
             {data.tx_mask_beschreibung -> f:format.html()}
         </div>
     </f:if>
+
+    <!-- Verlinkung Button -->
+    <f:if condition="{data.tx_mask_seitenlink}">
+        <div class="mehr-dazu">
+            <f:link.typolink parameter="{data.tx_mask_seitenlink}" class="btn btn-info">Mehr dazu</f:link.typolink>
+        </div>
+    </f:if>
+
 </div>

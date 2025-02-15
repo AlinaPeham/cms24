@@ -1,31 +1,36 @@
 <div class="team">
     <f:for each="{data.tx_mask_foto}" as="file">
-        <div class="team-member">
-            <!-- Bild -->
-            <div class="team-member-image">
-                <f:media file="{file}" width="200" alt="{file.description}" />
+        <div class="team-member" onclick="flipCard(this)">
+            <div class="team-member-inner">
+                <!-- Vorderseite (Bild) -->
+                <div class="team-member-front">
+                    <f:media file="{file}" width="200" alt="{file.description}" />
+                </div>
+
+                <!-- Rückseite (Steckbrief) -->
+                <div class="team-member-back">
+                    <f:if condition="{data.tx_mask_position}">
+                        <div class="team-member-position">
+                            {data.tx_mask_position}
+                        </div>
+                    </f:if>
+
+                    <f:if condition="{data.tx_mask_name}">
+                        <div class="team-member-name">
+                            <strong>{data.tx_mask_name}</strong>
+                        </div>
+                    </f:if>
+
+                    <f:if condition="{data.tx_mask_hobbys}">
+                        <div class="team-member-description">
+                            {data.tx_mask_hobbys -> f:format.nl2br()}
+                        </div>
+                    </f:if>
+                </div>
             </div>
-
-            <!-- Position -->
-            <f:if condition="{data.tx_mask_position}">
-                <div class="team-member-position">
-                    {data.tx_mask_position}
-                </div>
-            </f:if>
-
-            <!-- Name -->
-            <f:if condition="{data.tx_mask_name}">
-                <div class="team-member-name">
-                    <strong>{data.tx_mask_name}</strong>
-                </div>
-            </f:if>
-
-            <!-- Beschreibung/Hobbys -->
-            <f:if condition="{data.tx_mask_hobbys}">
-                <div class="team-member-description">
-                    {data.tx_mask_hobbys -> f:format.nl2br()}
-                </div>
-            </f:if>
         </div>
     </f:for>
 </div>
+
+
+
