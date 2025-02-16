@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2024-12-17UTC10:54:290">
+    <file source-language="en" datatype="plaintext" original="messages" date="2024-11-08UTC08:41:120">
         <header>
             <authorName>Alina Peham</authorName>
             <authorEmail>s2310456015@fhooe.at</authorEmail>
         </header>
         <body>
         <trans-unit id="terminbutton">
-                    <source>Appointment</source>
-           </trans-unit>
+            <source>Appointment</source>
+            <target>Termin</target>
+      </trans-unit>
         </body>
     </file>
 </xliff>
