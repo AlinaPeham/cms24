@@ -7,6 +7,8 @@
 
 @import 'EXT:news/Configuration/TypoScript/Styles/Twb5/setup.typoscript'
 
+@import 'EXT:ns-youtube/Configuration/TypoScript/setup.typoscript'
+
 
 ##############
 #### PAGE ####

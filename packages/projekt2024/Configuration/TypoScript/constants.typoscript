@@ -65,3 +65,5 @@ plugin.tx_news.view.twb5{
     partialRootPath = EXT:projekt2024/Resources/Private/Partials/
     layoutRootPath = EXT:projekt2024/Resources/Private/Layouts/
 }
+
+
