@@ -6,8 +6,11 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
 
 @import 'EXT:news/Configuration/TypoScript/Styles/Twb5/setup.typoscript'
+@import 'EXT:news/Configuration/TypoScript/setup.typoscript'
 
 @import 'EXT:ns-youtube/Configuration/TypoScript/setup.typoscript'
+
+plugin.tx_news.settings.startingpoint = 21
 
 
 ##############
