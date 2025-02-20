@@ -1,0 +1,46 @@
+/* Mask Leistungen */
+.leistungen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leistungen .titel {
+  text-align: center; /* Zentriert den Titel */
+  margin-top: 5px;
+}
+
+.leistungen .titel h1 {
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: "Segoe UI";
+  color: #003888;
+}
+
+.leistungen .logo {
+  text-align: center; /* Zentriert das Logo */
+}
+
+.leistungen .logo img {
+  height: 94px;/* Setzt das Logo auf 2 cm Höhe */
+  object-fit: contain; /* Stellt sicher, dass das Logo seine Proportionen beibehält */
+}
+
+.leistungen .fließtext {
+  font-size: 16px; /* Schriftgröße für den Text */
+  color: #13122F; /* Dunklere Textfarbe für den Fließtext */
+  margin-top: 2px; /* Leichter Abstand oben */
+}
+
+#p20 #c61 .contentcontainer-column, #p20 #c68 .contentcontainer-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

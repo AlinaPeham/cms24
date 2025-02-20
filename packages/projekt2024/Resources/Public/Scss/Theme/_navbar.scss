@@ -1,0 +1,128 @@
+// --- Breakpoints definieren ---
+$breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+);
+
+// --- Variablen für die Navbar ---
+$navbar-height: 180px;
+$nav-link-padding: 1rem;
+$nav-link-font-size: 1.2rem;  // Hauptnavigation größer
+$nav-link-line-height: 1.5;
+$nav-link-color: #003888;
+$nav-link-hover-color: #6083B5;
+$nav-background-color: #f8f9fa;
+$nav-border-color: #003888;
+$dropdown-font-size: 1rem;   // Dropdown-Menüs kleiner
+
+
+
+// --- Basis-Styles für die Navbar ---
+.navbar {
+  background-color: $nav-background-color;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: $navbar-height;
+  padding: 1rem;
+
+  // Branding / Logo
+
+  .navbar-brand {
+    font-size: 1.25rem;
+    color: $nav-link-color;
+    text-decoration: none;
+    display: flex;
+
+    &:hover {
+      color: $nav-link-hover-color;
+    }
+  }
+
+  // Navigation Links
+  .navbar-nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    .nav-item {
+      list-style: none;
+
+      .nav-link {
+        font-size: $nav-link-font-size;
+        line-height: $nav-link-line-height;
+        color: $nav-link-color;
+        font-weight: bold; // Fett
+        padding: $nav-link-padding;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          color: $nav-link-hover-color;
+        }
+      }
+    }
+  }
+
+  .dropdown-nav .nav-link-text{
+    padding: 0.5rem 1rem;
+    color: $nav-link-color;
+    text-decoration: none;
+    font-size: $dropdown-font-size; // Kleinere Schrift
+    font-weight: lighter;           // Leichtere Schrift
+  }
+  // Dropdown-Menü
+  .nav-item.dropdown {
+    position: relative;
+
+    .dropdown-toggle {
+      cursor: pointer;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      border: 1px solid $nav-border-color;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+
+      .dropdown-item {
+        padding: 0.5rem 1rem;
+        color: $nav-link-color;
+        text-decoration: none;
+        font-size: $dropdown-font-size; // Kleinere Schrift
+        font-weight: lighter;           // Leichtere Schrift
+
+        &:hover {
+          background-color: #f1f1f1;
+          color: $nav-link-hover-color;
+        }
+      }
+    }
+
+    // Dropdown bei Hover anzeigen
+    &:hover .dropdown-menu {
+      display: block;
+    }
+  }
+
+  // --- Responsive Verhalten ---
+  @media (max-width: map-get($breakpoints, md)) {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+
+    .navbar-nav {
+      flex-direction: column;
+      gap: 1rem;           // Vergrößerter Abstand zwischen den Menüpunkten
+      align-items: center;
+    }
+  }
+}

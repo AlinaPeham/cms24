@@ -1,0 +1,251 @@
+//
+// Variables
+//
+@import "variables";
+@import "navbar";
+@import "leistungen";
+@import "team";
+@import "footer";
+
+//
+// Import needed Bootstrap Package Files
+//
+@import "EXT:bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
+
+h1{
+  color: #003888;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 35px;
+}
+
+h2{
+  color: #003888;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 30px;
+}
+
+h3{
+  color: #003888;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 25px;
+}
+
+legend{
+  font-family: "Segoe UI";
+  color: #13122F;
+  font-size: 16px;
+}
+
+#p22 legend{
+  color: #003888;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 25px;
+}
+
+body{
+  font-family: "Segoe UI";
+  color: #13122F;
+  font-size: 16px;
+}
+
+
+
+//Button
+.btn.btn-primary.font-weight-bold.text-uppercase, .btn.btn-primary, .btn-info {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 17px;
+  background-color: #003888;
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1.5px solid #003888;
+
+  &:hover {
+    background-color: #FFFFFF;
+    color: #003888;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+//Zurück Button
+.btn.btn-outline-primary{
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 17px;
+  background-color: white;
+  color: #003888;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1.5px solid #003888;
+
+  &:hover {
+  background-color: #003888;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+//Button Footer
+#page-footer .btn.btn-info{
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 17px;
+  background-color: white;
+  color: #003888;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #6083B5;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+//Button leistungen
+.mehr-dazu {
+  margin-top: 20px;
+}
+
+.btn.btn-primary.font-weight-bold.text-uppercase{
+  margin-left: 15px;
+}
+
+
+
+#c110{
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+
+
+
+//Navigationsleiste
+.navbar-mainnavigation .navbar-brand-image img {
+  top: 100%!important;
+  z-index: 50;
+  max-height: 120px;
+  width: auto;
+  padding-bottom: 1px;
+}
+
+
+//Page Content
+#p22 #page-content, #p44 #page-content {
+  justify-content: flex-start;
+  padding-left: 80px;
+}
+
+#page-content{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+//Kontakt container
+#p23 #c92 .contentcontainer-column, #c154 .contentcontainer-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+//Bilder
+#c74 img, #c88 img, #c77 img, #c89 img, #c90 img, #c91 img{
+  width: 60%;
+  height: auto;
+  margin-left: 20px;
+}
+
+#c96 img{
+  width: 800px;
+  height: auto;
+}
+
+#c121 img, #c125 img{
+  width: 50px;
+  height: auto;
+}
+
+#c118 img, #c123 img{
+  width: 180px;
+  height: auto;
+}
+
+#page-header .navbar-brand-logo-normal{
+  display: flex;
+  align-items: center;
+  padding-bottom: 14px;
+}
+
+
+//Container Login
+#c117 .contentcontainer, #c122 .contentcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+//Interesse
+  .text-center {
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+#c129 .frame-inner, #c36 .frame-inner, #c76 .frame-inner, #c79 .frame-inner, #c80 .frame-inner, #c81 .frame-inner, #c82 .frame-inner, #c83 .frame-inner{
+  width: fit-content;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 5px auto 10px auto;
+}
+
+//Footer
+.footer-section-content{
+  background-color: #003888;
+}
+
+
+//news
+/* Zusätzliche Abstände und Trennung der News-Items */
+.news-item {
+  margin-bottom: 15px; /* Abstand nach jedem News-Item */
+  padding-bottom: 15px; /* Innenabstand am unteren Rand */
+  border-bottom: 1px solid #ddd; /* Trennlinie zwischen den News-Items */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
